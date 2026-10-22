@@ -1,6 +1,6 @@
 import SoundCloud from './sound-cloud.svelte';
-import { page } from 'vitest/browser';
-import { describe, expect, it } from 'vitest';
+import { page } from 'vite-plus/test/browser';
+import { describe, expect, it } from 'vite-plus/test';
 import { render } from 'vitest-browser-svelte';
 
 describe('SoundCloud', () => {
