@@ -1,6 +1,6 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vite-plus/test';
 import { cleanup, render } from 'vitest-browser-svelte';
-import { page } from 'vitest/browser';
+import { page } from 'vite-plus/test/browser';
 import Toot from './toot.svelte';
 
 describe('Toot', () => {
@@ -170,7 +170,7 @@ describe('Toot', () => {
 
 		// Should not throw an error
 		await expect(
-			render(Toot, {
+			await render(Toot, {
 				instance,
 				username,
 				toot_id,
