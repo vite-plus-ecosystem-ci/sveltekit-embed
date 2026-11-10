@@ -16,8 +16,8 @@ catalog:
   svelte: ^5.57.1
   svelte-check: ^4.7.6
   typescript: ^6.0.3
-  vite: npm:@voidzero-dev/vite-plus-core@1.5.0
-  vite-plus: 1.5.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.a86fd1603196e23718d16144a472ad91b4ba21be
+  vite-plus: 0.0.0-commit.a86fd1603196e23718d16144a472ad91b4ba21be
   vitest: 5.1.0
   vitest-browser-svelte: ^3.1.0
   wrangler: ^4.118.0
@@ -35,7 +35,11 @@ overrides:
 peerDependencyRules:
   allowedVersions:
     # Vite+ core exposes Vite 8 APIs but uses Vite+'s package version.
-    vite: '1.5.0'
+    vite: '*'
+    vitest: '*'
+  allowAny:
+    - vite
+    - vitest
 
 minimumReleaseAgeExclude:
   # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
