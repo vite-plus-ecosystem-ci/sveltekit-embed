@@ -36,3 +36,24 @@ peerDependencyRules:
   allowedVersions:
     # Vite+ core exposes Vite 8 APIs but uses Vite+'s package version.
     vite: '1.6.0'
+minimumReleaseAgeExclude:
+  - vite-plus
+  - '@voidzero-dev/*'
+  - '@oxc-project/*'
+  - oxlint
+  - '@oxlint/*'
+  - oxfmt
+  - '@oxfmt/*'
+  - tsrs
+  - '@tsrs/*'
+  - vitest
+  - '@vitest/*'
+  - tsdown
+  - '@tsdown/*'
+  - rolldown
+  - '@rolldown/*'
+  - tinybench
+  - yuku-core
+  - yuku-parser
+  - '@yuku-core/*'
+  - '@yuku-toolchain/*'
