@@ -1,5 +1,5 @@
 import Zencastr from './zencastr.svelte';
-import { describe, expect, it, vi } from 'vitest';
+import { describe, expect, it, vi } from 'vite-plus/test';
 import { render } from 'vitest-browser-svelte';
 
 describe('Zencastr', () => {
