@@ -10,15 +10,15 @@ catalog:
   '@sveltejs/kit': ^3.0.0
   '@sveltejs/vite-plugin-svelte': ^7.3.0
   '@typescript/native': npm:typescript@^7.0.2
-  '@vitest/browser-playwright': 5.1.0
-  '@vitest/coverage-v8': 5.1.0
+  '@vitest/browser-playwright': 5.1.1
+  '@vitest/coverage-v8': 5.1.1
   playwright: 1.65.1
   svelte: ^5.57.1
   svelte-check: ^4.7.6
   typescript: ^6.0.3
-  vite: npm:@voidzero-dev/vite-plus-core@8.3.8000
-  vite-plus: 1.7.0
-  vitest: 5.1.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
+  vite-plus: 0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
+  vitest: 5.1.1
   vitest-browser-svelte: ^3.1.0
   wrangler: ^4.118.0
 
@@ -35,4 +35,19 @@ overrides:
 peerDependencyRules:
   allowedVersions:
     # Vite+ core exposes Vite 8 APIs but uses Vite+'s package version.
-    vite: '8.3.8000'
+    vite: '*'
+    vitest: '*'
+  allowAny:
+    - vite
+    - vitest
+minimumReleaseAgeExclude:
+  - vite-plus
+  - '@voidzero-dev/*'
+  - oxlint
+  - '@oxlint/*'
+  - tsrs
+  - '@tsrs/*'
+  - oxfmt
+  - '@oxfmt/*'
+  - vitest
+  - '@vitest/*'
